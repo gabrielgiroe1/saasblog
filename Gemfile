@@ -69,3 +69,5 @@ end
 gem "stripe", "~> 12.5"
 
 gem "faker", "~> 3.4"
+
+gem "devise", "~> 4.9"
