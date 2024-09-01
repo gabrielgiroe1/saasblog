@@ -67,3 +67,5 @@ group :test do
 end
 
 gem "stripe", "~> 12.5"
+
+gem "faker", "~> 3.4"
