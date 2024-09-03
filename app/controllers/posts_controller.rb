@@ -14,6 +14,7 @@ class PostsController < ApplicationController
   def show
     if @psots.premium? && current_user.subscription_status != "active"
       redirect_to posts_path, alert: "Only for active subscibers"
+    end
   end
 
   # GET /posts/new
