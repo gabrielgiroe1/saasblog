@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
-    if @psots.premium? && current_user.subscription_status != "active"
+    if @psots&.premium? && current_user.subscription_status != "active"
       redirect_to posts_path, alert: "Only for active subscibers"
     end
   end
